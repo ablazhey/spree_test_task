@@ -1,0 +1,7 @@
+<%= form_tag("/upload", method: "post", multipart: true )  do %>
+    <%= label_tag(:q, "Product CSV:") %>
+    <br>
+    <%= file_field(:doc, :doc) %>
+    <br>
+    <%= submit_tag("Upload") %>
+<% end %>
